@@ -1,0 +1,21 @@
+{
+  "name": "study-ai",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Node.js self-study lab: local text retrieval without an API key",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "tsx src/index.ts",
+    "dev": "tsx watch src/index.ts",
+    "test": "node --import tsx --test test/*.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}

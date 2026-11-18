@@ -8,6 +8,7 @@
 |------|------|
 | [`docs/frontend-to-ai-learning-outline.md`](docs/frontend-to-ai-learning-outline.md) | 前端工程师转 AI 赛道：可落地学习大纲 |
 | [`docs/stage-0-ai-capability-map.md`](docs/stage-0-ai-capability-map.md) | 阶段 0：AI 产品与能力地图 |
+| [`demos/embedding-mini/`](demos/embedding-mini/) | 本地 embedding + 内存向量检索教学 demo（零 API Key） |
 | [`journal/`](journal/) | 每日自动打卡记录（`YYYY-MM-DD.md`） |
 | [`.github/workflows/daily-commit.yml`](.github/workflows/daily-commit.yml) | 每天 0 点（Asia/Shanghai）自动提交 |
 

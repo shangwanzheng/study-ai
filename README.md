@@ -1,41 +1,32 @@
-# study-ai 学习包
+# study-ai
 
-给「前端转 AI」用的本地材料包。建议整夹复制到本机：`D:\study-ai`。
+前端转 AI 的学习笔记仓库：按阶段沉淀大纲与知识点，并用定时任务每天自动打卡。
 
 ## 目录
 
-```
-study-ai/
-  docs/
-    frontend-to-ai-learning-outline.md   # 总学习大纲
-    stage-0-ai-capability-map.md         # 阶段 0 知识点与阅读
-  demos/
-    embedding-mini/
-      index.mjs                          # embedding + 内存向量检索 demo
-      README.md
-```
+| 路径 | 说明 |
+|------|------|
+| [`docs/frontend-to-ai-learning-outline.md`](docs/frontend-to-ai-learning-outline.md) | 前端工程师转 AI 赛道：可落地学习大纲 |
+| [`docs/stage-0-ai-capability-map.md`](docs/stage-0-ai-capability-map.md) | 阶段 0：AI 产品与能力地图 |
+| [`docs/stage-1-prompt-structured-tools.md`](docs/stage-1-prompt-structured-tools.md) | 阶段 1：Prompt、结构化输出与工具调用 |
+| [`demos/embedding-mini/`](demos/embedding-mini/) | 本地 embedding + 内存向量检索教学 demo（零 API Key） |
+| [`demos/prompt-tools-mini/`](demos/prompt-tools-mini/) | 阶段 1：JSON 校验 + 工具调用序列 demo |
+| [`journal/`](journal/) | 每日自动打卡记录（`YYYY-MM-DD.md`） |
+| [`.github/workflows/daily-commit.yml`](.github/workflows/daily-commit.yml) | 每天 0 点（Asia/Shanghai）自动提交 |
 
-## 在你电脑上的位置（Cursor Agent Store 同步）
+## 学习阶段
 
-若尚未复制到 D 盘，可先在资源管理器打开（以你本机已同步到的子代理目录为准）：
+| 阶段 | 主题 | 材料 |
+|------|------|------|
+| **0** | 建立 AI 产品与能力地图 | [大纲 §阶段 0](docs/frontend-to-ai-learning-outline.md) · [能力地图详解](docs/stage-0-ai-capability-map.md) |
+| **1** | Prompt、结构化输出与工具调用 | [大纲 §阶段 1](docs/frontend-to-ai-learning-outline.md) · [阶段 1 详解](docs/stage-1-prompt-structured-tools.md) · [demo](demos/prompt-tools-mini/) |
+| **2** | 前端侧 AI 工程（流式、鉴权、配额） | [大纲 §阶段 2](docs/frontend-to-ai-learning-outline.md) |
+| **3** | RAG / 知识库入门 | [大纲 §阶段 3](docs/frontend-to-ai-learning-outline.md) |
+| **4** | Agent / 工作流入门 | [大纲 §阶段 4](docs/frontend-to-ai-learning-outline.md) |
+| **5**（可选） | 微调感知、评测、成本、安全合规 | [大纲 §阶段 5](docs/frontend-to-ai-learning-outline.md) |
 
-`C:\Users\DELL\AppData\Local\Cursor\AgentStores\cursor_agent_stores\bc-3bbd61ea-f870-5c8e-a813-10dc770b1fd4\files\study-ai`
+建议路径：先做「会用模型的工程师」，再做「会把模型装进产品的工程师」，最后按兴趣加深 RAG / Agent / 评测。详见大纲总览。
 
-复制到 D 盘（PowerShell）：
+## 每日打卡
 
-```powershell
-New-Item -ItemType Directory -Force -Path D:\study-ai | Out-Null
-Copy-Item -Recurse -Force `
-  "C:\Users\DELL\AppData\Local\Cursor\AgentStores\cursor_agent_stores\bc-3bbd61ea-f870-5c8e-a813-10dc770b1fd4\files\study-ai\*" `
-  D:\study-ai\
-```
-
-## 跑 demo
-
-```powershell
-cd D:\study-ai\demos\embedding-mini
-node .\index.mjs
-node .\index.mjs "积分能不能换成现金"
-```
-
-需已安装 Node.js。
+GitHub Actions 按 **Asia/Shanghai 每天 00:00**（cron：`0 16 * * *` UTC）运行：创建或更新当日 `journal/YYYY-MM-DD.md`（含日期与「自动打卡」一行），有变更则提交并推送到 `main`。

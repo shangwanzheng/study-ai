@@ -8,7 +8,9 @@
 |------|------|
 | [`docs/frontend-to-ai-learning-outline.md`](docs/frontend-to-ai-learning-outline.md) | 前端工程师转 AI 赛道：可落地学习大纲 |
 | [`docs/stage-0-ai-capability-map.md`](docs/stage-0-ai-capability-map.md) | 阶段 0：AI 产品与能力地图 |
+| [`docs/stage-1-prompt-structured-tools.md`](docs/stage-1-prompt-structured-tools.md) | 阶段 1：Prompt、结构化输出与工具调用 |
 | [`demos/embedding-mini/`](demos/embedding-mini/) | 本地 embedding + 内存向量检索教学 demo（零 API Key） |
+| [`demos/prompt-tools-mini/`](demos/prompt-tools-mini/) | 阶段 1：JSON 校验 + 工具调用序列 demo |
 | [`journal/`](journal/) | 每日自动打卡记录（`YYYY-MM-DD.md`） |
 | [`.github/workflows/daily-commit.yml`](.github/workflows/daily-commit.yml) | 每天 0 点（Asia/Shanghai）自动提交 |
 
@@ -17,7 +19,7 @@
 | 阶段 | 主题 | 材料 |
 |------|------|------|
 | **0** | 建立 AI 产品与能力地图 | [大纲 §阶段 0](docs/frontend-to-ai-learning-outline.md) · [能力地图详解](docs/stage-0-ai-capability-map.md) |
-| **1** | Prompt、结构化输出与工具调用 | [大纲 §阶段 1](docs/frontend-to-ai-learning-outline.md) |
+| **1** | Prompt、结构化输出与工具调用 | [大纲 §阶段 1](docs/frontend-to-ai-learning-outline.md) · [阶段 1 详解](docs/stage-1-prompt-structured-tools.md) · [demo](demos/prompt-tools-mini/) |
 | **2** | 前端侧 AI 工程（流式、鉴权、配额） | [大纲 §阶段 2](docs/frontend-to-ai-learning-outline.md) |
 | **3** | RAG / 知识库入门 | [大纲 §阶段 3](docs/frontend-to-ai-learning-outline.md) |
 | **4** | Agent / 工作流入门 | [大纲 §阶段 4](docs/frontend-to-ai-learning-outline.md) |
